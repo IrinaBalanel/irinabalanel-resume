@@ -1,4 +1,4 @@
-# [Hugo Résumé Theme]
+# My Resume
 
 [![Screenshot](./.github/preview.png)](https://hugoblox.com/templates/)
 
