@@ -22,7 +22,7 @@ brew install go hugo
 npm i
 
 # Start development server
-npm run dev
+hugo server --disableFastRender --noHTTPCache
 
 # Edit content files:
 # - content/_index.md (main resume content)
@@ -31,8 +31,8 @@ npm run dev
 
 ### Production Deployment
 ```bash
-# Build static site
-npm run build
+# Build static site with cleanup + minify
+hugo --gc --minify
 
 # Deploy: copy public/ folder to production server
 # Production path: /var/www/irinabalanel/resume
