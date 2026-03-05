@@ -1,0 +1,14 @@
+services:
+  resume:
+    image: ${IMAGE:-irinabalanel-resume:latest}
+    build:
+      context: .
+    ports:
+      - "${APP_PORT:-8084}:80"
+    restart: unless-stopped
+    networks:
+      - resume
+
+networks:
+  resume:
+    name: resume
