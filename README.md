@@ -34,8 +34,9 @@ hugo server --disableFastRender --noHTTPCache
 # Build static site with cleanup + minify
 hugo --gc --minify
 
-# Deploy: copy public/ folder to production server
-# Production path: /var/www/irinabalanel/resume
+# Deploy the generated public/ directory through your hosting platform
 ```
 
-The `public/` folder contains all static files needed for deployment.
+The `public/` folder contains the generated static site. Keep deployment paths,
+server access details, and environment-specific configuration outside the
+repository.
